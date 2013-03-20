@@ -1,0 +1,85 @@
+{"botinfo":       {
+	"auth":   "auth+live+####",
+	"userid": "####",
+	"botname":"A Churro Stand",
+	"laptop": "linux"
+},
+	"roomid":     "####",
+	"admin":      "####",
+	"database":   {
+		"usedb":     true,
+		"dbname":    "turntable",
+		"logchat":   true,
+		"tablenames":{
+			"song":    "SONGLIST",
+			"chat":    "CHATLOG",
+			"user":    "USERS",
+			"banned":  "BANNEDUSERS",
+			"scrubhat":"SCRUBHAT",
+            "pm":      "PM"
+		},
+		"login":     {
+			"user":    "admin",
+			"password":"churros",
+			"host":    "localhost"
+		}
+	},
+	"lastfm":     {
+		"useapi":   true,
+		"lastfmkey":"####"
+	},
+	"http":       {
+		"usehttp":true,
+		"port":   8181,
+		"host":   "localhost"
+	},
+	"responses":  {
+		"respond":        true,
+		"announcebonus":  false,
+		"reportsongstats":false,
+		"welcomeusers":   false,
+		"welcomepm":      false,
+		"alwayspm":       false,
+		"pmgreet":        "Please familiarize yourself with the room rules. Type 'q' in chat to add yourself to the DJ queue. Full rules at http://bit.ly/TLBLyC . Type 'commands' to see a list of commands I can respond to.",
+		"greeting":       "Welcome, ",
+		"ownerresponse":  "TheGingerRage made me!",
+		"sing":           false,
+		"rules":          {
+			"description":"We use a queue, type 'q' without quotes in chat and the QueueBotler will assist you!",
+			"link":       "http://bit.ly/TLBLyC"
+		}
+	},
+	"consolelog": true,
+	"djing":      {
+		"botdj": true,
+		"minDjs":0,
+		"maxDjs":2
+	},
+	"enforcement":{
+		"enforceroom":false,
+		"waitlist":   false,
+		"songslimit": {
+			"limitsongs":false,
+			"maxsongs":  2,
+			"minDjs":    5
+		},
+		"stepuprules":{
+			"waittostepup":true,
+			"waittype":    "MINUTES",
+			"length":      10
+		},
+		"ffarules":   {
+			"multiplespotffa":false,
+			"timerffa":       true,
+			"timeout":        30
+		},
+		"idle":       {
+			"idlerules":      true,
+			"idlewarntime":   10,
+			"idleremovaltime":15,
+			"minDjs":         0
+		}
+	},
+	"maintenance":{
+		"autorejoin":true
+	}}
